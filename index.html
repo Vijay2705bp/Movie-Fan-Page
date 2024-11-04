@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Harry Potter Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#characters">Characters</a></li>
+                <li><a href="#trailer">Trailers</a></li>
+                <li><a href="#quote">Quote of the Day</a></li>
+                <li><a href="#trivia">Trivia Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the Wizarding World</h2>
+        <img src="C:\Users\Admin\Downloads\harry_potter_and_the_prisoner_of_azkaban_2005_original_film_art_600x.jpg" alt="Harry Potter Poster">
+        <p>Explore the magical world of Harry Potter, where friendship, bravery, and magic intertwine!</p>
+    </section>
+
+    <section id="characters">
+        <h2>Character Bios</h2>
+        <div class="character">
+            <img src="C:\Users\Admin\Downloads\Harry_Potter_character_poster.jpg" alt="Harry Potter">
+            <h3>Harry Potter</h3>
+            <p>Harry is the main protagonist of the series, known for his bravery and loyalty.</p>
+            <p><strong>Interesting Fact:</strong> Harry has a lightning-shaped scar on his forehead.</p>
+        </div>
+        <!-- Add more characters as needed -->
+    </section>
+
+    <section id="trailer">
+        <h2>Movie Trailers</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1b1t6m65H2s" title="Harry Potter Trailer" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="quote">
+        <h2>Quote of the Day</h2>
+        <blockquote id="quoteDisplay">"It does not do to dwell on dreams and forget to live." - Albus Dumbledore</blockquote>
+        <button onclick="displayQuote()">New Quote</button>
+    </section>
+
+    <section id="trivia">
+        <h2>Trivia Quiz</h2>
+        <div id="quiz">
+            <p>Question: What is the name of Harry Potter's pet owl?</p>
+            <button onclick="checkAnswer('Hedwig')">Hedwig</button>
+            <button onclick="checkAnswer('Fawkes')">Fawkes</button>
+            <button onclick="checkAnswer('Scabbers')">Scabbers</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Harry Potter Fan Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
